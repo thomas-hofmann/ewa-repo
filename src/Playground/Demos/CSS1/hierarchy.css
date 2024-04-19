@@ -1,0 +1,32 @@
+p {
+    text-decoration: underline;
+    font-size: 36px;
+}
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+/*
+p:last-child {
+    animation: fadeIn 1s infinite alternate;
+}
+
+p:hover {
+    background-color: deeppink;
+    color: white;
+}
+*/
+
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+  }

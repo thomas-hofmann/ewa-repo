@@ -1,0 +1,45 @@
+.body__custom {
+    background-color: black;
+    color: white;
+}
+
+.container__main {
+    margin-top: 60px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.flex-item {
+    flex:0 1 calc(25% - 8px);
+    border: 1px solid gray;
+}
+
+@media (max-width: 1200px) {
+    .flex-item {
+        flex:0 1 calc(33% - 8px); 
+    }
+}
+
+@media (max-width: 992px) {
+    .flex-item {
+        flex:0 1 calc(50% - 5px);
+    }
+}
+
+@media (max-width: 576px) {
+    .flex-item {
+        flex:0 1 100%;
+    }
+}
+
+
+
+.flex-image {
+    height: auto;
+    width: 100%;
+}
