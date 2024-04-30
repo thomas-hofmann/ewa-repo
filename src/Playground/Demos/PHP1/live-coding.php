@@ -9,14 +9,14 @@ echo <<< HTML
         <title>First-Page</title>
     </head>
     <body>
-    <h1>Live-Coding Auflösung</h1>
+    <h1>Live-Coding: Auflösung</h1>
     <hr>
 HTML;
 
 echo <<< HTML
     <header>
     <h1>Header</h1>
-    <img alt="Eine Katze" src="https://media.istockphoto.com/photos/cat-hunting-to-mouse-at-home-burmese-cat-face-before-attack-closeup-picture-id1313021528?s=612x612">
+    <img alt="Eine Katze" src="cat.jpg" style="max-width:50%; height: auto; border: 1px solid gray;">
     </header>
 HTML;
 
@@ -34,6 +34,8 @@ $data = [
       'text' => 'wikipedia',
   ],
 ];
+
+echo '<h2>Navigation</h2>';
 
 foreach($data as $item) {
     $link = $item['link'];

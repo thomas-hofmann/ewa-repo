@@ -9,7 +9,7 @@ echo <<< HTML
     <title>First-Page</title>
   </head>
   <body>
-    <h1>Echo Demo</h1>
+    <h1>Echo: Demo</h1>
     <hr>
 HTML;
 
