@@ -24,6 +24,16 @@
     transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease;
 }
 
+.flex-item--red {
+    background-color: #dc3545;
+}
+
+.flex-item--red:hover {
+    background-color: #fff;
+    color: #dc3545 !important;
+    border-color: #dc3545;
+}
+
 .flex-item--warning {
     background-color: #000;
     border-color: #000;

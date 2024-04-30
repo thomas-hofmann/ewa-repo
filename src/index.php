@@ -53,8 +53,11 @@ echo <<<HTML
         <a href="./Exam_Probe" class="flex-item">Probeklausur</a>
         $Exam
     </div>
-        <div class="flex-container">
+    <div class="flex-container">
         <a href="http://localhost/phpmyadmin" class="flex-item">phpMyAdmin lokal</a>
+    </div>
+    <div class="flex-container">
+        <a href="/Showcase" class="flex-item flex-item--red">Showcase</a>
     </div>
 </main>
 </body>
