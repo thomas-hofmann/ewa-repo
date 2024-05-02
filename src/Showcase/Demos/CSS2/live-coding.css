@@ -1,0 +1,19 @@
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+    height: 400px;
+}
+
+.flex-item {
+    background-color: #f1f1f1;
+    width: 100px;
+    height: 100px;
+}

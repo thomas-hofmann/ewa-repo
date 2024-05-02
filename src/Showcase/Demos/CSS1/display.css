@@ -1,0 +1,33 @@
+.block {
+    display: block;
+    background-color: #3498db;
+    color: #fff;
+
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 20px;
+    margin-right: 10px;
+
+    height: 200px;
+    width: 200px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+
+    height: 200px;
+    width: 200px;
+
+    padding: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}

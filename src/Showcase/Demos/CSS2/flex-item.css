@@ -1,0 +1,10 @@
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.flex-item {
+    background-color: #f1f1f1;
+    width: 100px;
+    height: 100px;
+}
