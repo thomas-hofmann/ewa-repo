@@ -22,7 +22,6 @@ class Lecture extends Page
      */
     protected function getViewData():array
     {
-        echo '<p> 3. getviewData()</p>';
         return [];
     }
 
@@ -31,10 +30,9 @@ class Lecture extends Page
      */
     protected function generateView():void
     {
-        echo '<p> 2. generateView()</p>';
         $this->getViewData();
         $this->generatePageHeader('Page Methods Demo');
-        echo '<section style="background: #FFCCCB; min-height: 200px;"><h2>Inhalt<h2></section>';
+        echo '<section style="background: #FFCCCB; min-height: 150px;"><h2>Inhalt<h2></section>';
         $this->generatePageFooter();
     }
 
@@ -43,8 +41,6 @@ class Lecture extends Page
      */
     protected function processReceivedData():void
     {
-        header("Content-type: text/html; charset=UTF-8");
-        echo '<p>1. processReceivedData()</p>';
         
     }
 

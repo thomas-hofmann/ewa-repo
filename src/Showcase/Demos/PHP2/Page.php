@@ -48,20 +48,17 @@ abstract class Page
             $this->pageMethodsDemo = true;
         }
 
-        // Achtung: Zu Demozwecken wollen wir den header bei der "page-methods.php" früher setzen
-        if (!$this->pageMethodsDemo) {
-            header("Content-type: text/html; charset=UTF-8");
-        }
+        
 
         $extraHeading = '';
         $extraStyle = '';
         // Achtung: Außerdem wollen wir für die Demo "page-methods.php" einige style Anpassungen machen
         // Sie sollten verstehen was hier passiert und ggf. anpassen bevor Sie den Code copy & pasten
         if ($this->pageMethodsDemo) {
-            $extraHeading = '<p> 4. generatePageHeader()</p>';
-            $extraStyle = 'style="background:lightBlue"';
+            $extraStyle = 'style="background:lightBlue; min-height: 150px;"';
         }
 
+        header("Content-type: text/html; charset=UTF-8");
         echo <<< HTML
             <!-- HEADER -->
             <!DOCTYPE html>
@@ -73,7 +70,6 @@ abstract class Page
             </head>
             <body>
                 <header $extraStyle>
-                    $extraHeading
                     <h1>PHP: Teil 2 Demos</h1>
                     <nav>
                         <a href="/">Home</a>
@@ -95,15 +91,13 @@ abstract class Page
         // Achtung: Außerdem wollen wir für die Demo "page-methods.php" einige style Anpassungen machen
         // Sie sollten verstehen was hier passiert und ggf. anpassen bevor Sie den Code copy & pasten
         if ($this->pageMethodsDemo) {
-            $extraHeading = '<p> 5. generatePageFooter()</p>';
-            $extraStyle = 'style="background:lightGreen;"';
+            $extraStyle = 'style="background:lightGreen; min-height: 150px;"';
         }
 
         echo <<< HTML
             <!-- FOOTER -->
             <footer $extraStyle>
                 <hr>
-                $extraHeading
                 <p>&#169 Thomas Hofmann</p>
             </footer>
             </body>
