@@ -48,9 +48,6 @@ abstract class Page
             $this->pageMethodsDemo = true;
         }
 
-        
-
-        $extraHeading = '';
         $extraStyle = '';
         // Achtung: Außerdem wollen wir für die Demo "page-methods.php" einige style Anpassungen machen
         // Sie sollten verstehen was hier passiert und ggf. anpassen bevor Sie den Code copy & pasten
@@ -86,7 +83,6 @@ abstract class Page
      */
     protected function generatePageFooter():void
     {
-        $extraHeading = '';
         $extraStyle = '';
         // Achtung: Außerdem wollen wir für die Demo "page-methods.php" einige style Anpassungen machen
         // Sie sollten verstehen was hier passiert und ggf. anpassen bevor Sie den Code copy & pasten
