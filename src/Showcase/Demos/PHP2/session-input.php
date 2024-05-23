@@ -6,8 +6,8 @@ if(isset($_POST['sessionData'])) {
     $_SESSION['data'] = $_POST['sessionData'];
 
     // Andere Keys zum testen
-    // $_SESSION['data2'] = $_POST['sessionData'];
-    // $_SESSION['data3'] = $_POST['sessionData'];
+   $_SESSION['data2'] = 'test123';
+   $_SESSION['data3'] = 'dada777';
 
     // PRG PATTERN
     // Seite wird neu OHNE Formulardaten geladen
