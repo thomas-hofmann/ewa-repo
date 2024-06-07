@@ -1,0 +1,77 @@
+/* Apply font family to the entire body and set a background image */
+body {
+   
+}
+
+/* Style for the main navigation: set font size and center align text */
+.main-navigation {
+    
+}
+
+/* Create a wrapper for positioning elements relative to each other */
+.star-wrapper {
+   /* code here */
+}
+
+/* Position the star element absolutely within its parent container */
+#star {
+   /* code here */
+}
+
+/* Style for a container: center it, set max width, background color, opacity, padding, margin, and border radius */
+.container {
+    /* code here */
+}
+
+/* Apply italic style to the first paragraph immediately following an h1 */
+h1 + p {
+    /* code here */
+}
+
+/* Set font size for all paragraphs within the main element */
+main p {
+    /* code here */
+}
+
+/* Make footer links block-level elements */
+.footer-link {
+    /* code here */
+}
+
+/* Define keyframes for a beating animation: scales element to 1.3 times its size at 50% */
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+/* Apply the beating animation to elements with the beat class */
+.beat {
+    display: inline-block; /* or whatever display type you need */
+    animation: beat 1s infinite;
+}
+
+.shaker:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+   
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+   
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

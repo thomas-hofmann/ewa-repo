@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="combinators.css">
+        <meta charset="utf-8">
+        <title>Combinators - Demo</title>
+    </head>
+    <body>
+        <h1>CSS: Combinators Demo</h1>
+        <hr>
+        <h2>Descendant Selector und Child Selector (>)</h2>
+        <div>
+            <p>Dieser Text wird blau sein, weil er ein direktes Kind von div ist.</p>
+            <article>
+                <p>Dieser Text wird nicht blau sein, weil er kein direktes Kind von div ist. Dafür rot weil er ein p-tag in einer div ist.</p>
+            </article>
+        </div>
+        <hr>
+        <h2>Adjacent Sibling Selector (+)</h2>
+        <p>Dieser Text wird grün sein, weil er direkt nach einem h2-Element kommt.</p>
+        <p>Dieser Text wird nicht grün sein, weil er nicht direkt nach einem h2-Element kommt.</p>
+        <hr>
+        <h3>General Sibling Selector (~)</h3>
+        <p>Dieser Text wird lila sein, weil er nach einem h3-Element kommt.</p>
+        <p>Dieser Text wird lila sein, weil er nach einem h3-Element kommt.</p>
+    </body>
+</html>

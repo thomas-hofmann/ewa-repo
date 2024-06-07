@@ -1,0 +1,19 @@
+/* Diese Regel beeinflusst nur <span>-Elemente, die innerhalb von <div>-Elementen liegen */
+div p {
+    color: red;
+}
+
+/* Diese Regel beeinflusst nur <p>-Elemente, die direkte Kinder von <div>-Elementen sind */
+div > p {
+    color: blue;
+}
+
+/* Diese Regel beeinflusst nur <p>-Elemente, die direkt nach einem <h2>-Element kommen */
+h2 + p {
+    color: green;
+}
+
+/* Diese Regel beeinflusst alle <p>-Elemente, die nach einem <h3>-Element kommen, nicht unbedingt direkt danach */
+h3 ~ p {
+    color: purple;
+}

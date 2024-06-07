@@ -15,18 +15,3 @@ p {
 #blue {
     color: blue;
 }
-
-/*
-p:last-child {
-    animation: fadeIn 1s infinite alternate;
-}
-
-p:hover {
-    background-color: deeppink;
-    color: white;
-}
-*/
-
-@keyframes fadeIn { 
-    from { opacity: 0; } 
-  }

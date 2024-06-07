@@ -24,6 +24,7 @@ function requestData() { // fordert die Daten asynchron an
 function processData() {
 	if(requestSearch.readyState == 4) { // Uebertragung = DONE
 		if (requestSearch.status == 200) {   // HTTP-Status = OK
+            let output = document.getElementById('output');
             while (output.firstChild) {
                 document.getElementById('output').removeChild(output.lastChild);
             }
