@@ -1,31 +1,47 @@
-body {
-  background-color:coral;
+.container {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #333;
+  background-color: white;
 }
 
-.paragraph {
-  font-size: 26px;
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    background-color: crimson;
+/* Media Query für kleine Bildschirme (bis 600px) */
+@media (max-width: 600px) {
+  .container {
+      background-color: #ffcccc;
+      
+  }
+  .container:before {
+    content: "Aktiv: @media (max-width: 600px)";
   }
 }
 
-@media screen and (min-width: 800px) {
-  .paragraph {
-    font-size: 36px;
+/* Media Query für mittlere Bildschirme (601px bis 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+      background-color: #ccffcc;
+  }
+  .container:before {
+    content: "Aktiv: @media (min-width: 601px) and (max-width: 1024px)";
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 800px) {
-  h1 {
-    text-decoration: underline;
+/* Media Query für große Bildschirme (ab 1025px) */
+@media (min-width: 1025px) {
+  .container {
+      background-color: #ccccff;
+  }
+  .container:before {
+    content: "Aktiv: @media (min-width: 1025px)";
   }
 }
 
+/* Druckansicht */
 @media print {
   body {
     color: red;
+  }
+  .container:before {
+    content: "Aktiv: @media print";
   }
 }
